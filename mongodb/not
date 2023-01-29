@@ -1,0 +1,10 @@
+
+docker exec -it mongodb bash
+mongo
+show dbs
+db.createCollection()
+show collections
+
+Mongose Express: http://localhost:8081/
+      - USERNAME=admin
+      - PASSWORD=admin123
