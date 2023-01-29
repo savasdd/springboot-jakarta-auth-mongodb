@@ -28,7 +28,7 @@ public class TokenException implements AuthenticationEntryPoint {
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
 
         final Map<String, Object> body = new HashMap<>();
-        body.put("message","JWT expired at 2023-01-28T21:53:19Z. Current time: 2023-01-29T10:23:42Z, a difference of 45023352 milliseconds.  Allowed clock skew: 0 milliseconds.");
+        body.put("message","JWT Expired.  Allowed clock skew: 0 milliseconds.");
         body.put("error", authException.getMessage());
         body.put("status", HttpServletResponse.SC_UNAUTHORIZED);
         body.put("path", request.getServletPath());
